@@ -8,7 +8,7 @@
 
 ## Installing
 ```bash
-$ pip install craftplot
+$ pip install craftplot==0.1.1
 ```
 
 ## Usage
