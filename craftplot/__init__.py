@@ -13,6 +13,7 @@ __license__ = "BSD License"
 from ._version import __version__
 
 from .aps_params import *
+from .default_params import *
 from .general import *
 from .colors import *
 from .styles import *

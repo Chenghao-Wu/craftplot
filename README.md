@@ -16,13 +16,14 @@ $ pip install craftplot==0.1.1
 ### Basic Example
 ```python
 import craftplot
-from craftplot import mplwrap,aps_params,linestyles,set_locator
+from craftplot import mplwrap,default_params,linestyles,set_locator
 
-@mplwrap(aps_params())
+@mplwrap(default_params())
 def plot_example():
     # plot images by matplotlib ...
 
     # Save the image. Give a file name with or without an extension (default: png).
+    fig.tight_layout(pad=0.1) 
     fig.save_fig('/path/to/save/fig')
 
 # Then use plot_example in a normal way.
@@ -139,6 +140,7 @@ def plot_example():
     # plot images by matplotlib ...
 
     # Save the image. Give a file name with or without an extension (default: png).
+    fig.tight_layout(pad=0.1) 
     fig.save_fig('/path/to/save/fig')
 
 # Then use plot_example in a normal way.
